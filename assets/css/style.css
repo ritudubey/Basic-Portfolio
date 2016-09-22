@@ -14,10 +14,13 @@ h1{
 }
 h2{
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	margin-left: 10px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	color :#4aaaa5;
 }
 .container{
+	width: 960px;
 	
 }
 
@@ -25,7 +28,6 @@ h2{
 	background-color: white;
 	float:left;
 	width:100%;
-	height: 90px;
 }
 
 #leftheader{
@@ -39,7 +41,15 @@ h2{
 	margin-right: 20px;
 	float: right;
 	text-align: right;
+}
 
+#rightheader a{
+	text-decoration: none;
+	color: #eeeeee;
+	border: transparent;
+	margin-right: 10px;
+	text-align: center;
+	font-size: 14px;
 }
 
 .bodycontainer{
@@ -53,9 +63,9 @@ h2{
 .aboutmecontainer {
 	background-color: #ffffff;
 	margin-right: 10px;
-	width: 67%;
+	width: 650px;
 	float:left;
-	margin: 10px 10px 10px 10px;
+	margin: 10px 0px 10px 0px;
 }
 
 #biotxt {
@@ -64,7 +74,7 @@ h2{
 
 .contactcontainer {
 	background-color: #ffffff;
-	width: 220px;
+	width: 270px;
 	float:left;
 	margin: 10px 10px 10px 10px;
 	padding: 0px 10px 10px 10px;
@@ -102,7 +112,7 @@ footer{
 
 .drawline{
 	background-color: #4aaaa5;
-	width: 100%; 
+	width: 990px; 
 	float: left;
 	height: 11px;
 	margin-left: 20px;
@@ -131,7 +141,6 @@ footer{
 
 .portfoliobox{
 	margin :10px 10px 10px 10px;
-	background-color: yellow;
 	position: relative;
 	float: left;
 }
@@ -143,9 +152,12 @@ footer{
 }
 
 .imagebanner {
-	background-color: green;
+	background-color: white;
 	padding: 10px 10px 10px 10px;
+	margin :10px 10px 10px 0px;
 	border: 1px solid;
 	text-align: center;
-	position: relative;
+	position: absolute;
+    width: 190px;
+    bottom: 40px;
 }
