@@ -10,7 +10,7 @@ h1{
 	color :#ffffff;
 	background-color: #4aaaa5;
 	padding: 20px;
-	width: 250px;
+	text-align: center;
 }
 h2{
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -33,6 +33,7 @@ h2{
 #leftheader{
 	margin-left: 40px;
 	float: left;
+	width: 30%;
 }
 
 #rightheader{
@@ -41,6 +42,7 @@ h2{
 	margin-right: 20px;
 	float: right;
 	text-align: right;
+	width: 50%;
 }
 
 #rightheader a{
@@ -62,22 +64,18 @@ h2{
 }
 .aboutmecontainer {
 	background-color: #ffffff;
-	margin-right: 10px;
-	width: 650px;
+	width: 70%;
 	float:left;
-	margin: 10px 0px 10px 0px;
+	margin-right: 20px;
+	position: relative;
 }
 
-#biotxt {
-	float: left;
-}
 
 .contactcontainer {
 	background-color: #ffffff;
-	width: 270px;
+	width: 20%;
 	float:left;
-	margin: 10px 10px 10px 10px;
-	padding: 0px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
 }
 
 
@@ -92,49 +90,64 @@ footer{
 }
 
 #smallbox {
-	height: 300px;
-	width: 300px;
+	width: 400px;
+	height: 400px;
 	-webkit-transform: rotate(-90deg);
 	margin: 10px 20px 10px 20px;
 	float:left;
 }
 
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a{
+	display: block;
+	padding: 2px;
+}
+
 .connectionscontainer{
 	background-color: #666666;
 	color:#ffffff;
-	margin: 0px 20px 0px 20px;
 	float:left;
 	text-align: center;
 	font-size: 12px;
-	padding: 20px;
+	padding: 20px 20px 20px 20px;
 	width: 100%;
+	margin: 0px 0px 0px 20px;
 }
 
 .drawline{
 	background-color: #4aaaa5;
-	width: 1000px; 
+	width: 100%; 
 	float: left;
-	height: 11px;
-	margin-left: 20px;
+	height: 10px;
+	margin: 0px 0px 0px 20px;
+	padding: 0px 20px 0px 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 30px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 30px;
 }
 
 .form-control {
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
 
 }
 
@@ -158,6 +171,86 @@ footer{
 	border: 1px solid;
 	text-align: center;
 	position: absolute;
-    width: 190px;
-    bottom: 40px;
+	width: 190px;
+	bottom: 40px;
+}
+
+@media screen and (max-width: 980px) {
+
+	/* The body's bg color will be #333 */
+	body {
+		background-color: white;
+	}
+
+	/* The wrapper's width will be 600px */
+	.container {
+		width: 960px;
+	}
+
+	.headercontainer{
+		position: static;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/* The body's bg color will be #333 */
+	body {
+		background-color: white;
+	}
+
+	/* The wrapper's width will be 600px */
+	.container {
+		width: 700px;
+	}
+	.headercontainer{
+		position: static;
+	}
+	.aboutmecontainer {
+
+		width: 100%
+		float: none;
+	}
+	#rightheader{
+		text-align: center;
+	}
+	.contactcontainer {
+	width: 100%;
+	float:right;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	/* The body's bg color will be #333 */
+	body {
+		background-color: white;
+	}
+
+	/* The wrapper's width will be 600px */
+	.container {
+		width: 600px;
+	}
+
+	.headercontainer{
+		position: static;
+	}
+
+	.aboutmecontainer {
+		width: 80%;
+		float: none;
+	}
+	#rightheader{
+		text-align: left;
+	}
+
+.contactcontainer {
+	width: 100%;
+	float:right;
+}
+.imagebanner {
+	width: 90%;
+	bottom: 40%;
+}
 }
